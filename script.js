@@ -7,6 +7,10 @@ function book(title, desc, status=false){
 
 }
 
-function addBookToLib(){
+function addBookToLib(title, desc)
+{
+
+    const newBook=new book(title, desc);
+    myLib.push(newBook);
 
 }

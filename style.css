@@ -18,3 +18,15 @@ body {
 form{
     margin: 50px;
 }
+
+.cardContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    background-color: rgb(81, 81, 173);
+    max-width:  100px;
+    max-height: 150px;
+    color: aliceblue;
+}
