@@ -26,5 +26,33 @@ form.addEventListener("submit", function(event) {
 
     addBookToLib(title,desc);
 
-    console.log(myLib);
+    form.reset()
+    
+});
+
+const cardcont=document.querySelector('.cardContainer');
+const refresh=document.querySelector('.Refresh');
+
+refresh.addEventListener('click',()=>{
+    cardcont.innerHTML='';
+    myLib.forEach((book) =>{
+
+
+
+        const card=document.createElement("div");
+        card.classList.add("card");
+        
+        const title=document.createElement("div");
+        title.textContent=book.title;
+        card.appendChild(title);
+
+        const desc=document.createElement("div");
+        desc.textContent=book.desc;
+        card.appendChild(desc);
+
+        cardcont.append(card);
+
+    }
+);
+
 });

@@ -30,3 +30,9 @@ form{
     max-height: 150px;
     color: aliceblue;
 }
+
+button.Refresh{
+    margin-bottom: 50px;
+    margin-left: 30px;
+    padding: 10px;
+}
